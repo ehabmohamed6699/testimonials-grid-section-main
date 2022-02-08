@@ -15,7 +15,8 @@ body{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(2,1fr);
-    grid-template-areas: "daniel daniel jonathan kira" "jeanette patrick patrick kira";
+    grid-template-areas: "daniel daniel jonathan kira" "jeanette patrick patrick kira"
+    "eyad eyad eyad eyad";
     gap: 30px;
     background-color: rgb(240, 240, 240);
 }
@@ -87,6 +88,14 @@ body{
 .kira .prof-pic{
     background-image: url(images/image-kira.jpg);
 }
+.eyad{
+    grid-area: eyad;
+    background-color: rgb(73 85 107);
+    color: blue;
+}
+.eyad .prof-pic{
+    background-image: url(images/eyad.jpeg);
+}
 .jeanette{
     background-color: white;
     color: black;
@@ -120,7 +129,7 @@ body{
     color: rgba(0, 0, 0, 0.726);
 }
 
-.daniel .topic-content, .patrick .topic-content, .jonathan .topic-content{
+.daniel .topic-content, .patrick .topic-content, .jonathan .topic-content, .eyad .topic-content{
     color: rgba(255, 255, 255, 0.479);
 }
 
@@ -129,7 +138,7 @@ body{
     color: rgba(0, 0, 0, 0.815);
 }
 
-.daniel .info, .patrick .info, .jonathan .info{
+.daniel .info, .patrick .info, .jonathan .info, .eyad .info{
     color: rgba(255, 255, 255, 0.753);
 }
 
