@@ -1,176 +1,181 @@
-.attribution{
-    font-size: 11px;
+.attribution {
+	font-size: 11px;
 }
-.attribution a { 
-    color: hsl(228, 45%, 44%); 
-}
-
-body{
-    margin: 0;
-    padding: 100px;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    width: 100%;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(2,1fr);
-    grid-template-areas: "daniel daniel jonathan kira" "jeanette patrick patrick kira"
-    "eyad eyad eyad eyad";
-    gap: 30px;
-    background-color: rgb(240, 240, 240);
-}
-.content{
-    border-radius: 10px;
-    box-shadow: 5px 5px 25px -5px #888888;
-}
-.profile{
-    width: 250px;
-    background-color: transparent;
-    display: flex;
-    align-items: center;
-    /* justify-content: space-evenly; */
-    padding: 10px;
-    margin-left: 10px;
-}
-.info h4, .info p{
-    margin: 5px;
+.attribution a {
+	color: hsl(228, 45%, 44%);
 }
 
-.info p{
-    font-size: 12px;
+body {
+	margin: 0;
+	padding: 100px;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+	width: 100%;
+	height: 100vh;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	grid-template-areas:
+		"daniel daniel jonathan kira" "jeanette patrick patrick kira"
+		"eyad eyad eyad eyad";
+	gap: 30px;
+	background-color: rgb(240, 240, 240);
+}
+.content {
+	border-radius: 10px;
+	box-shadow: 5px 5px 25px -5px #888888;
+}
+.profile {
+	width: 250px;
+	background-color: transparent;
+	display: flex;
+	align-items: center;
+	/* justify-content: space-evenly; */
+	padding: 10px;
+	margin-left: 10px;
+}
+.info h4,
+.info p {
+	margin: 5px;
 }
 
-.prof-pic{
-    
-    background-size: cover;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    margin-right: 10px;
-    border: 3px solid white;
-}
-.daniel{
-    grid-area: daniel;
-    background-color: rgb(115 63 201);
-}
-.daniel .topic-head{
-    position: relative;
-    z-index: 1;
-}
-.daniel .topic-head::before{
-    content: "";
-    width: 100px;
-    height: 100px;
-    background-image: url(images/bg-pattern-quotation.svg);
-    background-size: cover;
-    position: absolute;
-    right: 100px;
-    top: -50px;
-    z-index: -1;
+.info p {
+	font-size: 12px;
 }
 
-.daniel .prof-pic{
-    background-image: url(images/image-daniel.jpg);
+.prof-pic {
+	background-size: cover;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	margin-right: 10px;
+	border: 3px solid white;
 }
-.jonathan{
-    background-color: rgb(73 85 107);
-    grid-area: jonathan;
+.daniel {
+	grid-area: daniel;
+	background-color: rgb(115 63 201);
 }
-.jonathan .prof-pic{
-    background-image: url(images/image-jonathan.jpg);
+.daniel .topic-head {
+	position: relative;
+	z-index: 1;
 }
-.kira{
-    grid-area: kira;
-    background-color: white;
-    color: black;
-}
-.kira .prof-pic{
-    background-image: url(images/image-kira.jpg);
-}
-.eyad{
-    grid-area: eyad;
-    background-color: rgb(73 85 107);
-    color: blue;
-}
-.eyad .prof-pic{
-    background-image: url(images/eyad.jpeg);
-}
-.jeanette{
-    background-color: white;
-    color: black;
-    grid-area: jeanette;
-}
-.jeanette .prof-pic{
-    background-image: url(images/image-jeanette.jpg);
-}
-.patrick{
-    background-color: rgb(24 32 45);
-    grid-area: patrick;
-}
-.patrick .prof-pic{
-    background-image: url(images/image-patrick.jpg);
+.daniel .topic-head::before {
+	content: "";
+	width: 100px;
+	height: 100px;
+	background-image: url(images/bg-pattern-quotation.svg);
+	background-size: cover;
+	position: absolute;
+	right: 100px;
+	top: -50px;
+	z-index: -1;
 }
 
-.topic-head{
-    margin: 0 25px 15px;
-    font-size: 18px;
-    font-weight: 600;
-    color: white;
+.daniel .prof-pic {
+	background-image: url(images/image-daniel.jpg);
 }
-.topic-content{
-    margin: 0 25px 15px;
-    font-size: 14px;
-    color: rgba(0, 0, 0, 0.651);
-    
+.jonathan {
+	background-color: rgb(73 85 107);
+	grid-area: jonathan;
+}
+.jonathan .prof-pic {
+	background-image: url(images/image-jonathan.jpg);
+}
+.kira {
+	grid-area: kira;
+	background-color: white;
+	color: black;
+}
+.kira .prof-pic {
+	background-image: url(images/image-kira.jpg);
+}
+.eyad {
+	grid-area: eyad;
+	background-color: rgb(73 85 107);
+	color: blue;
+}
+.eyad .prof-pic {
+	background-image: url(images/eyad.jpeg);
+}
+.jeanette {
+	background-color: white;
+	color: black;
+	grid-area: jeanette;
+}
+.jeanette .prof-pic {
+	background-image: url(images/image-jeanette.jpg);
+}
+.patrick {
+	background-color: rgb(24 32 45);
+	grid-area: patrick;
+}
+.patrick .prof-pic {
+	background-image: url(images/image-patrick.jpg);
 }
 
-.kira .topic-head, .jeanette .topic-head{
-    color: rgba(0, 0, 0, 0.726);
+.topic-head {
+	margin: 0 25px 15px;
+	font-size: 18px;
+	font-weight: 600;
+	color: white;
+}
+.topic-content {
+	margin: 0 25px 15px;
+	font-size: 14px;
+	color: rgba(0, 0, 0, 0.651);
 }
 
-.daniel .topic-content, .patrick .topic-content, .jonathan .topic-content, .eyad .topic-content{
-    color: rgba(255, 255, 255, 0.479);
+.kira .topic-head,
+.jeanette .topic-head {
+	color: rgba(0, 0, 0, 0.726);
 }
 
-.kira .info, .jeanette .info{
-
-    color: rgba(0, 0, 0, 0.815);
+.daniel .topic-content,
+.patrick .topic-content,
+.jonathan .topic-content,
+.eyad .topic-content {
+	color: rgba(255, 255, 255, 0.479);
 }
 
-.daniel .info, .patrick .info, .jonathan .info, .eyad .info{
-    color: rgba(255, 255, 255, 0.753);
+.kira .info,
+.jeanette .info {
+	color: rgba(0, 0, 0, 0.815);
 }
 
-
-
-@media (max-width: 1150px){
-    body{
-        height: 100%;
-        padding: 50px;
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(4,1fr);
-        grid-template-areas: "daniel daniel" "jonathan jeanette" "patrick patrick" "kira kira";
-    }
+.daniel .info,
+.patrick .info,
+.jonathan .info,
+.eyad .info {
+	color: rgba(255, 255, 255, 0.753);
 }
 
-@media (max-width: 810px){
-    body{
-        height: 100%;
-        padding: 50px;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(9, 1fr);
-        grid-template-areas: "daniel" "daniel" "jonathan" "jeanette" "patrick" "patrick" "kira" "kira" "kira";
-    }
-    .info h4{
-        font-size: 12px;
-    }
-    .info p{
-        font-size: 10px;
-    }
-    .daniel .topic-head::before{
-        right: 0;
-    }
+@media (max-width: 1150px) {
+	body {
+		height: 100%;
+		padding: 50px;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(4, 1fr);
+		grid-template-areas: "daniel daniel" "jonathan jeanette" "patrick patrick" "kira kira" "eyad eyad";
+	}
+}
+
+@media (max-width: 810px) {
+	body {
+		height: 100%;
+		padding: 50px;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(9, 1fr);
+		grid-template-areas: "daniel" "daniel" "jonathan" "jeanette" "patrick" "patrick" "kira" "kira" "kira" "eyad" "eyad" "eyad";
+	}
+	.info h4 {
+		font-size: 12px;
+	}
+	.info p {
+		font-size: 10px;
+	}
+	.daniel .topic-head::before {
+		right: 0;
+	}
 }
